@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var factorial_of = function (n){
+
+        var count = 0;
+        var cc = 1;
+        var nn;
+
+        while (count < n){
+          nn = n - count;
+          cc = nn * cc;
+          count++
+        }
+        return console.log(cc);
+      }
+      factorial_of(5)
+    </script>
+  </body>
+</html>

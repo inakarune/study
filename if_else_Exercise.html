@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      <div id="output">
+
+      </div>
+      <div id="message">
+
+      </div>
+      <div id="result">
+
+      </div>
+
+    <script type="text/javascript">
+    /*
+    var hero, bad_guy
+
+    if (hero === 'strong'){
+      if (bad_guy === "weak"){
+        console.log('적이 약하군, 아주 쉬운 싸움이겠어.')
+      }
+      console.log('만만한 상대가 아니군, 끝까지 싸워보자!')
+    }
+
+    var response, image_path,
+        secret_saying = document.querySelector('#message').textContent;
+
+    if (secret_saying === '독수리는 자정에 날아갑니다.'){
+      response = '통과하세요';
+      image_path = 'images/open_door.png';
+    } else {
+      response = '적이다, 공격하라';
+      image_path = 'images/attack.png';
+    }
+
+    document.querySelector('#result').textContent = response;
+    document.querySelector('img').src = image_path;
+
+
+    var user_input = document.querySelector('input#search').value,
+        output_el = document.querySelector('#output');
+
+        if (usr_input !== 'happiness'){
+          if(!user_input){
+          document.querySelector('input').value = 'hey you, type here :z';
+        } else {
+          output_el.textContent = "you're searching for the wrong thing.";
+        }
+      } else {
+        output_el.textContent = 'ahh, the enlightened one!';
+      }
+
+      if (user_input === 'happiness'){
+        output_el.textContent = 'ahh, the enlightened one!';
+      } else if (!user_input){
+        document.querySelector('input').value = 'hey you, type here: z';
+      } else {
+        output_el.textContent = "you're searching for the wrong thing."
+      }
+      */
+
+      var age = prompt('나이 몇살?')
+      var output_el = document.querySelector('#output');
+      var name = 'bob';
+
+      if (age < 21){
+        output_el.textContent = 'sorry, son';
+      } else if (!(age > 35)){
+        output_el.textContent = 'id please'
+      } else if (name === 'bob'){
+        output_el.textContent = "you're banned, bob!"
+      } else {
+        output_el.textContent = 'come on in!'
+      }
+    /*
+    var start_game = prompt('게임을 시작하겠습니까?')
+
+    if (start_game === '네'){
+        var is_name = prompt('주인공 이름을 입력해주세요.');
+        document.querySelector('#story').textContent = is_name + '가 모험을 시작합니다.';
+          var are_who = prompt('누구와 동행합니까? 당나귀, 고양이, 강아지 중 하나를 입력해주세요.')
+            if (are_who === '고양이' || are_who === '당나귀' || are_who === '강아지'){
+              document.querySelector('#story').textContent = is_name + '가 ' + are_who + '와 함께 모험을 시작합니다.'
+            }
+    } else {
+      alert('게임을 종료합니다.');
+    }*/
+
+
+    /*
+    function extractMoter (paragraph){
+      var start = paragraph.indexOf(', 어미는 ') + ', 어미는 '.length;
+      var end = paragraph.indexOf(')');
+      return paragraph.slice(start, end);
+    }
+    console.log(extractMoter('태어난 고양이(2003/11/15, 어미는 금강): 아라'))
+*/
+      //indexOf 메소드 : 문자열 안의 문자나 부문자열(최초)위치를 찾는 데 사용할 수 있다.
+      //slice 메소드 : 문자열의 일부를 복사하는데 첫번째 인자로 전달한 위치의 문자로부터
+      //시작해 두번째 인자로 지정한 위치의 문자 바로 앞에서 끝나는 (이 문자는 포함하지 않는)
+      //범위의 문자열을 복사한다.
+      //slice 메소드에 인자를 딱 하나 전달하면 지정한 위치에서 끝까지 이르는 문자열이 반환된다.
+    </script>
+  </body>
+</html>

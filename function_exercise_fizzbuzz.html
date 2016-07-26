@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .str12 {
+        background-color: yellow;
+      }
+      .str1 {
+        background-color: gold;
+      }
+      .str2 {
+        background-color: lightblue;
+      }
+
+      .n {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="output">
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script type="text/javascript">
+    
+      var this_that = function (str1, str2){
+        var n = 1;
+
+        while (n <= 100){
+          if (n % 3 === 0 && n % 5 === 0){
+            console.log(str1 + str2)
+          } else if (n % 3 === 0){
+            console.log(str1)
+          } else if (n % 5 === 0){
+            console.log(str2)
+          } else {
+            console.log(n)
+          }
+          n++
+        }
+
+      }
+
+      this_that('Fizz', 'Buzz');
+
+       var this_that = function (str1, str2){
+        var n = 1;
+
+        while (n <= 100){
+          if (n % 3 === 0 && n % 5 === 0){
+            document.write(str1 + str2 + ', ')
+          } else if (n % 3 === 0){
+            document.write(str1 + ', ')
+          } else if (n % 5 === 0){
+            document.write(str2 + ', ')
+          } else {
+            document.write(n + ', ')
+          }
+          n++
+        }
+
+      }
+
+      this_that('Fizz', 'Buzz');
+
+      var this_that = function (str1, str2){
+        var n = 1;
+
+        while (n <= 100){
+          if (n % 3 === 0 && n % 5 === 0){
+            $('#output').append('<div class="str12">' + str1 + str2 + '</div>')
+          } else if (n % 3 === 0){
+            $('#output').append('<div class="str1">' + str1 + '</div>')
+          } else if (n % 5 === 0){
+            $('#output').append('<div class="str2">' + str2 + '</div>')
+          } else {
+            $('#output').append('<div class="n">' + n + '</div>')
+          }
+          n++
+        }
+
+      }
+
+      this_that('Fizz', 'Buzz');
+
+
+      var ask_arg = prompt('count_up_to를 argument로 추가하겠습니까?');
+
+      if (ask_arg === '네'){
+        this_that('Fizz', 'Buzz', count_up_to);
+      } else {
+        this_that('Fizz', 'Buzz');
+      }
+
+
+      var ask1 = prompt('인수를 입력해주세요, fizz_num');
+      var ask2 = prompt('다른 인수를 입력해주세요, buzz_num');
+
+      var this_that = function (str1, str2){
+        var n = 1;
+
+        while (n <= 100){
+            if (n % 3 === 0 || n % 5 === 0){
+              document.write(n + '<br>');
+            } else {
+              document.write(str1 + ', ' + str2 + '<br>');
+            }
+            n++
+        }
+      }
+      this_that(ask1, ask2);
+    </script>
+  </body>
+</html>

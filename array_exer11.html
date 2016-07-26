@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+    <script type="text/javascript">
+    var input_arr = ['김말이', '튀김', '메밀국수', '냉면']
+
+    function shuffler (arr){
+      var arr1 = [];
+      var i = arr1.length
+
+      while (i < arr.length){
+        var random = Math.floor(Math.random() * arr.length);
+
+        arr1.push(arr[random])
+        var j = 0;
+        while (j < i){
+
+           if (arr[random] === arr1[j]){
+             arr1.pop();
+           } else {
+             break;
+           }
+
+           j++
+         }
+
+        i++
+       console.log(arr1)
+      }
+
+    }
+    shuffler(input_arr);
+    </script>
+  </body>
+</html>

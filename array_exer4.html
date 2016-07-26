@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+      var scrambled_poem = "roses red are bacon crispy i bacon love and is blue violets are";
+
+      var scrambled_array = scrambled_poem.split(' ');
+      var unscrambled_array = [];
+      var i = 0;
+
+
+          unscrambled_array += scrambled_array.shift()
+          unscrambled_array += scrambled_array.pop()
+          unscrambled_array += scrambled_array.shift()
+          unscrambled_array += scrambled_array.pop()
+          unscrambled_array += scrambled_array.shift()
+          unscrambled_array += scrambled_array.pop()
+          unscrambled_array += scrambled_array.shift()
+          unscrambled_array += scrambled_array.pop()
+          unscrambled_array += scrambled_array.shift()
+          unscrambled_array += scrambled_array.pop()
+      unscrambled_array += scrambled_array.shift()
+      unscrambled_array += scrambled_array.pop()
+      unscrambled_array += scrambled_array.pop()
+
+      //console.log(scrambled_array.length);
+
+      console.log(scrambled_array);
+      console.log(unscrambled_array);
+      //unscrambled_array.join(' ');
+      //console.log(unscrambled_array)
+    </script>
+  </body>
+</html>

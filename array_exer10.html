@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="text" id="input_ask" name="name" value="">
+
+    <button type="button" id ="ask_button" name="button">ask question</button>
+    <button type="button" id ="ask_again" name="button">ask again</button>
+    <div id="answer">
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script type="text/javascript">
+
+
+      //$('#input_ask').
+      $('#ask_button').click(function (){
+        var words = ['a', 'b', 'c', 'd', 'e', 'f']; // 5
+        var rand = Math.ceil(Math.random() * words.length);
+
+        $('#answer').append(words[rand]);
+
+      });
+      $('#ask_again').click(function (){
+        $('#answer').empty();
+//ask again 버튼을 누르면 기존의 질문과 답변을 없애주는 버튼 만들기
+      })
+
+    </script>
+  </body>
+</html>

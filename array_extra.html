@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var array_of_numbers = [20, 8, 28, 44, 30];
+      var arr = [];
+
+
+      var big_small = function(value, index, ar){
+
+        var max = Math.max.apply(null, ar)
+        var min = Math.min.apply(null, ar)
+        arr.push(min);
+        arr.push(max);
+        console.log(arr)
+        
+      }
+      array_of_numbers.forEach(big_small)
+
+    </script>
+  </body>
+</html>
