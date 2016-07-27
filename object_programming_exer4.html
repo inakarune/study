@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+      var dog = {
+        name : 'mumu',
+        location : 'kangrung',
+        party : function (){
+          console.log(this.name + '가 미친듯이 춤을 춥니다.');
+        },
+        favorite_food : 'meat',
+        eat : function (){
+          console.log(this.name + '가 ' + this.favorite_food + '를 먹습니다.');
+        },
+        hungry : true
+      };
+
+      dog.eat = function (){
+        this.hungry = false;
+      }
+      //dog.eat();
+
+      dog.go_to_park = function (){
+        this.location = 'Park';
+        this.hungry = true;
+
+        console.log('사는 곳 : ' + this.location + '\n');
+        console.log('배고픔 상태 : ' + this.hungry);
+      }
+
+      dog.go_to_park();
+    </script>
+  </body>
+</html>

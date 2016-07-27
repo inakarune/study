@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+    <script type="text/javascript">
+    var warrior_factory = function (name, weapon){
+      var warrior = {};
+
+      warrior.name = name;
+      warrior.weapon = weapon;
+      warrior.adventure = function (){
+        this.attack();
+        this.attack();
+    
+      }
+      warrior.attack = function (){
+        console.log(this.name + '은 ' + this.weapon + '을 가지고 있습니다.');
+      }
+      return warrior
+    }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+    var move_fn = function(){
+      this.position = this.speed;
+    }
+
+    var meow_fn = function (){
+      console.log(this.name + '가 야옹거립니다.');
+    }
+    
+    var car1 = {
+      type: "Hyundai Civic",
+      speed: 5,
+      position: 1,
+      move: move_fn
+    }
+
+    var cat1 = {
+      name : 'navi',
+      meow : meow_fn
+    };
+    var cat2 = {
+      name : 'lyn',
+      meow : meow_fn
+    };
+
+    </script>
+  </body>
+</html>

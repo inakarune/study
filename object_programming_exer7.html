@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+    var nap_adder = function (cat){
+      cat.nap = function (){
+        console.log('i am nap');
+      }
+    }
+    nap_adder(cat);
+    
+    var fetch_adder = function (dog){
+        dog.fetch = function (){
+          console.log('i am fetch');
+        }
+    }
+
+    fetch_adder(dog)
+    function eat_fn (){
+      this.hungry = false;
+      console.log(this.name + '가 ' + this.favorite_food + '를 먹습니다.');
+    }
+
+    function party_fn (){
+      console.log(this.name + '가 미친듯이 춤을 춥니다.');
+    }
+
+    function go_to_park_fn (){
+      this.location = 'Park';
+      this.hungry = true;
+
+      console.log('사는 곳 : ' + this.location + '\n');
+      console.log('배고픔 상태 : ' + this.hungry);
+    }
+
+    var dog = {
+      name : 'mumu',
+      location : 'kangrung',
+      party : party_fn,
+      favorite_food : 'meat',
+      eat : eat_fn,
+      hungry : true,
+      go_to_park : go_to_park_fn
+    };
+    </script>
+  </body>
+</html>
