@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+    <script type="text/javascript">
+    
+      var str = 'Javascript';
+      var output = '';
+
+      output += 'anchor: ' + str.anchor() + '<br>';
+      output += 'big: ' + str.big() + '<br>';
+      output += 'blink: ' + str.blink() + '<br>';
+      output += 'bold: ' + str.bold() + '<br>';
+      output += 'fixed: ' + str.fixed() + '<br>';
+      output += 'string: ' + str.fontcolor('Red') + '<br>';
+      output += 'fontsize: ' + str.fontsize(15) + '<br>';
+      output += 'italics: ' + str.italics() + '<br>';
+      output += 'link: ' + str.link('http://www.naver.com') + '<br>';
+      output += 'small: ' + str.small() + '<br>';
+      output += 'strike: ' + str.strike() + '<br>';
+      output += 'sub: ' + str.sub() + '<br>';
+      output += 'sup: ' + str.sup() + '<br>';
+
+      document.write(output);
+
+
+      var output = 'Hello World..!';
+
+      output = output.toLowerCase();
+      output = output.substring(0, 10);
+      output = output.anchor('name');
+
+      document.write(output);
+
+
+      var array1 = [52, 273, 103, 57, 32];
+      var array2 = new Array();
+      var array3 = new Array(10);
+      var array4 = new Array(52, 273, 103, 57, 32);
+
+      document.write(array1 + '<br>')
+      document.write(array2 + '<br>')
+      document.write(array3 + '<br>')
+      document.write(array4 + '<br>')
+
+
+      var array = ['A', 'B', 'C', 'D'];
+
+      var output = '';
+      for (var i = 0; i < array.length; i++){
+        output += i + ' : ' + array[i] + '\n';
+      }
+      document.write(output);
+
+
+function Student(name, korean, math, english, science){
+  this.이름 = name;
+  this.국어 = korean;
+  this.수학 = math;
+  this.영어 = english;
+  this.과학 = science;
+
+  this.getSum = function (){
+    return this.국어 + this.수학 + this.영어 + this.과학;
+  };
+  this.getAverage = function (){
+    return this.getSum() / 4;
+  };
+  this.toString = function (){
+    return this.이름 + '\t' + this.getSum() + '\t' + this.getAverage();
+  };
+}
+
+var students = [];
+students.push(new Student('윤하린', 96, 98, 92, 98));
+students.push(new Student('최지웅', 92, 94, 88, 98));
+
+students.sort(function (left, right){
+  return right.getSum() - left.getSum();
+});
+
+students = students.slice(0, 3);
+
+var output = '이름\t총점\t평균\n' + '<br>';
+for (var i in students){
+  output += students[i].toString() + '\n' + '<br>';
+}
+
+document.write(output);
+
+
+
+  // Array 생성자 함수의 프로토타입에 remove() 메서드를 추가합니다.
+
+  Array.prototype.remove = function (index){
+    this.splice(index, 1);
+  }
+
+  var array = [52, 273, 103, 32, 274, 129];
+
+  for (var i = array.length; i >= 0; i--){
+    if (array[i] > 100){
+      array.remove(i);
+    }
+  }
+
+  document.write(array)
+
+
+
+  var date = new Date(1991, 12, 9);
+  var output = '';
+
+  output += 'toDateString: ' + date.toDateString() + '\n';
+  output += 'toGMTString: ' + date.toGMTString() + '\n';
+  output += 'toLocaleDateString: ' + date.toLocaleDateString() + '\n';
+  output += 'toLocaleString: ' + date.toLocaleString() + '\n';
+  output += 'toLocaleTimeString: ' + date.toLocaleTimeString() + '\n';
+  output += 'toString: ' + date.toString() + '\n';
+  output += 'toTimeString: ' + date.toTimeString() + '\n';
+  output += 'toUTCString: ' + date.toUTCString() + '\n';
+
+
+  alert(output);
+
+
+var findMax = Math.max;
+document.write(findMax(52, 273, 103, 57, 32))
+
+
+  document.write(Array.isArray([1, 2, 3]));
+  document.write(Array.isArray({}));
+  document.write(Array.isArray(1));
+
+
+  var array = [1, 2, 3, 4, 5, 5, 4, 3, 2, 1]
+
+  var output1 = array.indexOf(4);
+  var output2 = array.indexOf(8);
+  var output3 = array.lastIndexOf(4);
+  var output4 = array.lastIndexOf(8);
+
+  var output = '';
+  output += output1 + ' : ' + output2 + '<br>';
+  output += output3 + ' : ' + output4 + '<br>';
+  document.write(output);
+
+
+  var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+  var sum = 0;
+  var output = '';
+
+  array.forEach(function (element, index, array){
+    sum += element;
+    output += index + ': ' + element + ' -> ' + sum + '\n';
+  })
+  //alert(output);
+
+  array = array.filter(function (element, index, array){
+    return element <= 5;
+  })
+  alert(array)
+
+  var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+  function lessThanFive(element, index, array){
+    return element < 5;
+  }
+
+  function lessThanTwenty(element, index, array){
+    return element < 20;
+  }
+
+  var output1 = array.every(lessThanFive);
+  var output2 = array.every(lessThanTwenty);
+  var output3 = array.some(lessThanFive);
+  var output4 = array.some(lessThanTwenty);
+
+  var output = '';
+  output += output1 + ' : ' + output2 + '\n';
+  output += output3 + ' : ' + output4;
+
+  alert(output);
+
+var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+var output = array.map(function (element){
+  return element * element;
+})
+
+alert(output);
+
+
+  var array = [1, 2, 3, 4, 5];
+
+  var output = '';
+  array.reduce(function (previousValue, currentValue, index, array){
+    output += previousValue + ' : ' + currentValue + ' : ' + index + '\n';
+  })
+
+  alert(output);
+
+
+  var array = [1, 2, 3, 4, 5];
+
+  var result = array.reduce(function (previousValue, currentValue, index, array){
+    return previousValue + currentValue;
+  })
+  //document.write(result);
+
+  var object = {
+    name : 'RintIanTta',
+    gender : 'Male'
+  }
+
+  var copy = JSON.parse(JSON.stringify(object));
+  document.write(copy.name + ' : ' + copy.gender);
+
+
+  var date = new Date();
+
+  alert(JSON.stringify(date.toJSON()))
+
+
+  var str = ' Hello World..! ';
+  alert('"' + str.trim() + '"');
+    </script>
+  </body>
+</html>
