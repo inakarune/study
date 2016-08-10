@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-
-
-    <script type="text/javascript">
     var them_dogs = [{
     name: 'Henry',
     age: 0.5,
@@ -53,10 +43,3 @@
     }
 
     hang_dog(them_dogs, 'tennis ball');
-
-
-
-
-    </script>
-  </body>
-</html>
