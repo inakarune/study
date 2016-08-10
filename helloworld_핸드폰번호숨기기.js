@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-
-    <script>
 
       function hide_numbers (s){
 
@@ -22,6 +13,3 @@
 
 
       console.log('결과 : ' + hide_numbers('0323284754'));
-    </script>
-  </body>
-</html>
