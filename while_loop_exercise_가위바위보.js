@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-
-    <script type="text/javascript">
     var input = prompt('가위바위보를 합시다.');
 
     while (true){
@@ -56,11 +47,3 @@
        break;
      }
 }
-
-
-
-
-
-    </script>
-  </body>
-</html>
