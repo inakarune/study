@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <script type="text/javascript">
+
       var array_of_functions = [ function (){
         console.log('hi') }, function (){
           console.log('bye') } ]
@@ -16,7 +9,3 @@
       array_of_functions[3] = adder;
 
       array_of_functions.forEach( function (func){ func(3, 4) } )
-
-    </script>
-  </body>
-</html>
