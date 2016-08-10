@@ -1,19 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <div id="story">
-
-    </div>
-    <div id="count">
-
-    </div>
-
-
-    <script type="text/javascript">
       var n;
       var ask_integer = prompt('번호를 맞춰주세요!?');
 
@@ -44,12 +28,3 @@
             } else {
               alert('다시 입력해주세요!')
             }
-
-
-
-
-
-
-    </script>
-  </body>
-</html>
