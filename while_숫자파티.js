@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-
-
-    <script type="text/javascript">
-
     var i = 1, n = 5
     var str = '';
     var j = 1;
@@ -30,6 +19,3 @@
       console.log(str)
     i++
     }
-    </script>
-  </body>
-</html>
