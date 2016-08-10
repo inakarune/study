@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <script type="text/javascript">
     function collatz(num) {
         var answer = 0;
         //500이상일 때 -1이 반환되지 않는다.
@@ -32,6 +24,3 @@
 
 // 아래는 테스트로 출력해 보기 위한 코드입니다.
 console.log( collatz(1117065) );
-    </script>
-  </body>
-</html>
