@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-
-
-
-    <script type="text/javascript">
-    var famous = ['alex smith', 'amy whinehouse', 'cameron diaz', 'brad pitt',
+var famous = ['alex smith', 'amy whinehouse', 'cameron diaz', 'brad pitt',
     'ashton kutcher', 'mark whalberg', 'morgan freeman', 'mila kunis']
     var favorites = [];
     var obama_job = [];
@@ -62,8 +51,3 @@
 
       }
       console.log(reverse_politico_lookup)
-
-
-    </script>
-  </body>
-</html>
