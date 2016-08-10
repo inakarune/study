@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
-
-    <script type="text/javascript">
     var car_factory = function (){
       var car = {};
 
@@ -20,6 +11,4 @@
       }
       return car
     }
-    </script>
-  </body>
-</html>
+   
