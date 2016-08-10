@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
-
-    <script type="text/javascript">
     var warrior_factory = function (name, weapon){
       var warrior = {};
 
@@ -23,6 +14,4 @@
       }
       return warrior
     }
-    </script>
-  </body>
-</html>
+   
