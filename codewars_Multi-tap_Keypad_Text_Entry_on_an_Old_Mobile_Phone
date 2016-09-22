@@ -1,0 +1,19 @@
+function presses(phrase) {
+
+phrase = phrase.split('')
+for (var i = 0; i < phrase.length; i++){
+  phrase[i] = phrase[i].toUpperCase()
+}
+
+var phone = ['1', 'ABC2', 'DEF3', 'GHI4', 'JKL5', 'MNO6', 'PQRS7', 'TUV8', 'WXYZ9', '*', ' 0', '#']
+var sum = 0;
+for (var i = 0; i < phrase.length; i++){
+  for (let e of phone){
+    if (e.indexOf(phrase[i]) >= 0){
+      sum += e.indexOf(phrase[i]) + 1;
+    }
+  }
+}
+  return sum;
+  
+}
