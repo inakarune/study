@@ -1,9 +1,9 @@
-    var i = 1, n = 5
+    var i = 1, n = 5;
     var str = '';
     var j = 1;
 
     while ( i <= n ) {
-    j = 1
+    j = 1;
     str = 'welcome ' + i;
       while ( j < i ) {
 
