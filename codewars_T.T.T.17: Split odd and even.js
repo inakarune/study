@@ -1,7 +1,7 @@
 function splitOddAndEven(n) {
-var arr = String(n).split('');
-var odd = [];
-  for (var i = 0; i < arr.length; i++){
+let arr = String(n).split('');
+let odd = [];
+  for (let i = 0; i < arr.length; i++){
     if (arr[i + 1] === undefined){
       break;
     } else {
@@ -18,5 +18,5 @@ var odd = [];
     
   }
   
-  return arr.map((v) => Number(v));
+  return arr.map(Number);
 }
