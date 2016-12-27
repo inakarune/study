@@ -1,9 +1,9 @@
 function travel(r, zipcode) {
-var str = '';
-var sss = '';
-var count = 0;
-var replay = 0;
-var str_arr = r.split(',');
+let str = '';
+let sss = '';
+let count = 0;
+let replay = 0;
+let str_arr = r.split(',');
 
     str += zipcode + ":";
 
