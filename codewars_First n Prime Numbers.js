@@ -1,7 +1,7 @@
 function Primes(){
   let that = this;
   this.cache = [2];
-  this.first = first
+  this.first = first;
 }
 
 var Primes = new Primes();
