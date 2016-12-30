@@ -6,12 +6,8 @@ function okkOokOo(s){
   for(let i = 0; i < l; ++i){
     txt += convert(str[i]);
   }
-  console.log(str)
-  
-  
-  
-  
   return txt;
+  
   function convert(str){
     
     str = str.replace(/, /g, '').toLowerCase().replace(/[ok]/g, function(v){
@@ -21,7 +17,7 @@ function okkOokOo(s){
       return '1';
     }
   })
-  let num = parseInt(str, 2);
-  return String.fromCharCode(num);
+    let num = parseInt(str, 2);
+    return String.fromCharCode(num);
   }
   
