@@ -3,13 +3,13 @@ if(len == undefined){
   return len;
 }
 
-  let arr = [];
-  let txt = str.split(' ');
-  let part = [];
-  let count = 0;
-  let pop = '';
+  let arr = [],
+      txt = str.split(' '),
+      part = [],
+      count = 0;,
+      pop = '';
   
-  for(let i = 0; i < txt.length; i++){
+  for(let i = 0, len = txt.length; i < len; i++){
     let l = txt[i].length;
     if(part[0] == ' '){
       part.shift();
@@ -47,14 +47,14 @@ if(len == undefined){
       }   
   }
   
-  for(let i = 0; i < arr.length; i++){
+  for(let i = 0, leng = arr.length; i < leng; i++){
     if(arr[i][arr[i].length - 1] === ' '){
       arr[i].pop();
     }
   }
   
   let reg = /\s/;
-  for(let i = 0; i < arr.length; i++){
+  for(let i = 0, leng = arr.length; i < leng; i++){
     let item = arr[i];
     if(item.join('').length != len){
       for(let j = 0; j < item.length; j++){
