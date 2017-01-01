@@ -1,8 +1,8 @@
 function maxContiguousSum (arr) {
-  let sum = 0;
-  let len = arr.length;
-  let count = 0;
-  let idx = 0;
+  let sum = 0,
+      len = arr.length,
+      count = 0,
+      idx = 0;
   
   while(count < len){
     let s = 0;
@@ -13,7 +13,6 @@ function maxContiguousSum (arr) {
       }
       idx++;
     }
-    
     count++;
     idx = count;
   }
