@@ -18,7 +18,7 @@ let he = [];
   } else if(he.every(v => v == 2)){
     return 2;
   } 
-  z++
+  z++;
 }
 
 let y = 0;
@@ -32,7 +32,7 @@ while(y < 3){
   } else if(cross.every(v => v == 2)){
     return 2;
   } 
-  y++
+  y++;
 }
   for(let i = 0; i < 3; i++){
     if(board[i].some(v => v == 0)){
